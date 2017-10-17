@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+mksquashfs ~/projects/NiChrome/midori /tmp/midori.squashfs -root-owned -noappend
+cat ~/bin/AppImageRuntime > /tmp/midori
+cat /tmp/midori.squashfs >> /tmp/midori
+chmod a+x /tmp/midori

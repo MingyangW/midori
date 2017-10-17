@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PATH=$APPDIR/usr/bin:$PATH LD_LIBRARY_PATH=\
+$APPDIR/lib64:\
+$APPDIR/lib/x86_64-linux-gnu:\
+$APPDIR/usr/lib:\
+$APPDIR/usr/lib/midori:\
+$APPDIR/usr/lib/x86_64-linux-gnu:\
+$APPDIR/usr/lib/x86_64-linux-gnu/mesa:\
+$APPDIR/usr/lib/x86_64-linux-gnu/mesa-egl:\
+ midori
